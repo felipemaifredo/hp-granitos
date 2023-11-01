@@ -1,0 +1,95 @@
+@import url('../../variables.css');
+
+
+#Presentation {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../Assets/HP-Granitos.webp');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+#Presentation .info-container {
+    height: 100%;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+}
+
+#Presentation .info-container .logo-container {
+    
+}
+
+#Presentation .info-container .logo-container .images-box {
+    display: flex;
+    gap: 10px;
+}
+
+#Presentation .info-container .logo-container .images-box .logo1, #Presentation .info-container .logo-container .images-box .logo2 {
+    height: 55px;
+}
+
+#Presentation .info-container .logo-container p {
+    font-size: 1.9rem;
+    color: var(--color-blue);
+}
+
+#Presentation .info-container .info-box {
+    
+}
+
+#Presentation .info-container .info-box h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+    color: var(--color-blue);
+}
+
+#Presentation .info-container .info-box h1 span {
+    width: 400px;
+    font-size: 1.5rem;
+}
+
+#Presentation .info-container .btn-box {
+    height: 50px;
+    width: 320px;
+    display: grid;
+    place-items: center;
+    background-color: var(--color-blue);
+    border-radius: 30px;
+}
+
+#Presentation .info-container .btn-box a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    color: var(--color-white);   
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#Presentation .video-container {
+    height: 100%;
+    width: 700px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#Presentation .video-container img {
+    width: 100%;
+    border-radius: 70px 70px 0 0;
+    box-shadow: -8px 15px 34px 1px rgba(19, 32, 42, 1);
+    -webkit-box-shadow: -8px 15px 34px 1px rgba(19, 32, 42, 1);
+    -moz-box-shadow: -8px 15px 34px 1px rgba(19, 32, 42, 1);
+}
+
+
