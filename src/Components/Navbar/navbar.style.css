@@ -5,13 +5,23 @@
     top: 50px;
     right: 50%;
     transform: translate(50%, -50%);
-}
-
-ul {
     display: flex;
     gap: 50px;
 }
 
-li {
+#navbar .navbar-container {
+    display: flex;
+    gap: 30px;
+}
+
+#navbar .navbar-container .navbar-item {
     list-style: none;
+}
+
+#navbar .navbar-container .navbar-item .navbar-link {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 700;
+    padding: 10px;
+    font-size: 1.12rem;
 }

@@ -51,7 +51,11 @@
     color: var(--color-blue);
 }
 
-#Presentation .info-container .info-box h1 span {
+#Presentation .info-container .info-box h1 .title-h1 {
+    font-size: 2.5rem;
+}
+
+#Presentation .info-container .info-box h1 .subtitle-h1 {
     width: 400px;
     font-size: 1.5rem;
 }

@@ -15,16 +15,16 @@ const Presentation = () => {
                         <img src={Logo1} alt='Imagem 1' className='logo1' />
                         <img src={Logo2} alt='Imagem 1' className='logo2' />
                     </div>
-                    <p>Granitos Export</p>
+                    <p className='texts-presentation'>Granitos Export</p>
                 </div>
                 <div className='info-box'>
                     <h1>
-                        Compre seu projeto de granito com segurança e com preço justo.
-                        <span>E tenha sua casa do jeito que sempre sonhou.</span>
+                        <span className='title-h1 texts-presentation'>Compre seu projeto de granito com segurança e com preço justo.</span>
+                        <span className='subtitle-h1 texts-presentation'>E tenha sua casa do jeito que sempre sonhou.</span>
                     </h1>
                 </div>
                 <div className='btn-box'>
-                    <a href='#'>Quero Meu projeto em Granito</a>
+                    <a href='#' className='texts-presentation'>Quero Meu projeto em Granito</a>
                 </div>
             </div>
             <div className='video-container'>
