@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/hp-granitos/static/css/main.9d2daed9.css",
-    "main.js": "/hp-granitos/static/js/main.f48018e1.js",
+    "main.css": "/hp-granitos/static/css/main.f83fdbbc.css",
+    "main.js": "/hp-granitos/static/js/main.ab78485a.js",
     "static/js/787.b6c74976.chunk.js": "/hp-granitos/static/js/787.b6c74976.chunk.js",
     "static/media/video1.gif": "/hp-granitos/static/media/video1.3b41bdea03fb918d7cd2.gif",
+    "static/media/imgAbout.png": "/hp-granitos/static/media/imgAbout.43d9394cb558fa78f14f.png",
     "static/media/HP-Granitos.webp": "/hp-granitos/static/media/HP-Granitos.45729132f77f08da91e9.webp",
+    "static/media/6.png": "/hp-granitos/static/media/6.36607c47329c955ce6a8.png",
+    "static/media/7.png": "/hp-granitos/static/media/7.96a9a746b0f05aeb3b64.png",
+    "static/media/9.png": "/hp-granitos/static/media/9.96a9a746b0f05aeb3b64.png",
+    "static/media/8.png": "/hp-granitos/static/media/8.89fcc15a35bc26e2eb1f.png",
+    "static/media/5.png": "/hp-granitos/static/media/5.80dff6f4664dd51497b0.png",
     "static/media/3.png": "/hp-granitos/static/media/3.5f2f983b945a78a0c2ff.png",
     "static/media/2.png": "/hp-granitos/static/media/2.123271813354eea660e6.png",
     "index.html": "/hp-granitos/index.html",
-    "main.9d2daed9.css.map": "/hp-granitos/static/css/main.9d2daed9.css.map",
-    "main.f48018e1.js.map": "/hp-granitos/static/js/main.f48018e1.js.map",
+    "main.f83fdbbc.css.map": "/hp-granitos/static/css/main.f83fdbbc.css.map",
+    "main.ab78485a.js.map": "/hp-granitos/static/js/main.ab78485a.js.map",
     "787.b6c74976.chunk.js.map": "/hp-granitos/static/js/787.b6c74976.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d2daed9.css",
-    "static/js/main.f48018e1.js"
+    "static/css/main.f83fdbbc.css",
+    "static/js/main.ab78485a.js"
   ]
 }
