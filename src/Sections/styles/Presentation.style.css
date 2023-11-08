@@ -62,7 +62,8 @@
 
 #Presentation .info-container .btn-box {
     height: 50px;
-    width: 320px;
+    width: auto;
+    padding: 0 30px;
     display: grid;
     place-items: center;
     background-color: var(--color-blue);

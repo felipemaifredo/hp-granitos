@@ -1,0 +1,59 @@
+@import url('../../variables.css');
+
+#About {
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#About .content-about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
+    width: 600px;
+}
+
+#About .content-about-container h2 {
+    color: var(--color-gold);
+    text-transform: uppercase;
+    margin-bottom: -25px;
+}
+
+#About .content-about-container h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-bottom: 20px;
+    color: var(--color-blue);
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--color-blue);
+    }
+}
+
+#About .content-about-container p {
+    font-weight: 500;
+    font-size: 1.05rem;
+    
+}
+
+#About .img-container-about {
+    height: 450px;
+    width: 550px;
+}
+
+#About .img-container-about img {
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}

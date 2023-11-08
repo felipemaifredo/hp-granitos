@@ -24,7 +24,7 @@ const Presentation = () => {
                     </h1>
                 </div>
                 <div className='btn-box'>
-                    <a href='#' className='texts-presentation'>Quero Meu projeto em Granito</a>
+                    <a href='google.com' className='texts-presentation' rel='nofollow'>Quero Meu projeto em Granito</a>
                 </div>
             </div>
             <div className='video-container'>
