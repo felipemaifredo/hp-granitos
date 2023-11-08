@@ -11,7 +11,7 @@ import { changeTextsHomeBR, changeTextsHomeUS, changeTextsHomeSP } from './Texts
 
 function ChangeIdiom() {
   const location = useLocation().pathname;
-  const [isIdiom, setisIdiom] = useState( localStorage.getItem('isIdiom') );
+  const [isIdiom, setisIdiom] = useState( localStorage.getItem('isIdiom') || 'isBr' );
   const [isBr, setIsBr] = useState(true);
   const [isUs, setIsUs] = useState(false);
   const [isSp, setIsSp] = useState(false);
@@ -21,14 +21,19 @@ function ChangeIdiom() {
   });
 
   const toggleIdiom = (idiomSelect) => {
-    switchIdiom(idiomSelect)
+    if (isIdiom !== idiomSelect) {
+      localStorage.setItem('isIdiom', idiomSelect);
+      setisIdiom(idiomSelect);
+    };
+
+    switchIdiom(idiomSelect);
   };
 
   const verifyIdiom = (isIdiom) => {
     if (isIdiom === 'isBr') {
       return
     }
-    switchIdiom(isIdiom)
+    switchIdiom(isIdiom);
   };
 
   const switchIdiom = (IdiomToAnalize) => {
@@ -37,31 +42,25 @@ function ChangeIdiom() {
           setIsBr(true);
           setIsUs(false);
           setIsSp(false);
-          localStorage.setItem('isIdiom', isIdiom);
-          setisIdiom(isIdiom);
           changeTextsBR();
         break;
       case 'isUs':
-          setIsUs(true);
           setIsBr(false);
-          setIsSp(false);
-          localStorage.setItem('isIdiom', isIdiom);
-          setisIdiom(isIdiom);
+          setIsUs(true);
+          setIsSp(false);     
           changeTextsUS();
         break;
       case 'isSp':
-          setIsSp(true);
           setIsBr(false);
           setIsUs(false);
-          localStorage.setItem('isIdiom', isIdiom);
-          setisIdiom(isIdiom);
+          setIsSp(true);
           changeTextsSP();
         break;
     
       default:
         break;
-    }
-  }
+    };
+  };
 
   const changeTextsBR = () => {
     switch (location) {
@@ -71,7 +70,7 @@ function ChangeIdiom() {
     
       default:
         break;
-    }
+    };
   };
 
   const changeTextsUS = () => {
@@ -82,7 +81,7 @@ function ChangeIdiom() {
     
       default:
         break;
-    }
+    };
   };
 
   const changeTextsSP = () => {
@@ -93,7 +92,7 @@ function ChangeIdiom() {
     
       default:
         break;
-    }
+    };
   };
 
   return (

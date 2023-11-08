@@ -82,13 +82,14 @@
 
 #Presentation .video-container {
     height: 100%;
-    width: 700px;
+    width: 800px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
 #Presentation .video-container img {
+    height: 80%;
     width: 100%;
     border-radius: 70px 70px 0 0;
     box-shadow: -8px 15px 34px 1px rgba(19, 32, 42, 1);
