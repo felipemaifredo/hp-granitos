@@ -33,7 +33,20 @@ export const changeTextsHomeBR = () => {
       textsProducts[2].innerText = 'Nome e tals 1';
       textsProducts[3].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
       textsProducts[4].innerText = 'Solicitar Orçamento';
-    }
+      textsProducts[5].innerText = 'Nome e tals 2';
+      textsProducts[6].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+      textsProducts[7].innerText = 'Solicitar Orçamento';
+      textsProducts[8].innerText = 'Nome e tals 3';
+      textsProducts[9].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+      textsProducts[10].innerText = 'Solicitar Orçamento';
+      textsProducts[11].innerText = 'Nome e tals 4';
+      textsProducts[12].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+      textsProducts[13].innerText = 'Solicitar Orçamento';
+      textsProducts[14].innerText = 'Nome e tals 5';
+      textsProducts[15].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+      textsProducts[17].innerText = 'Ver Todos';
+
+    };
   };
   
   export const changeTextsHomeUS = () => {
@@ -71,6 +84,20 @@ export const changeTextsHomeBR = () => {
       textsProducts[2].innerText = 'Name and tals 1';
       textsProducts[3].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
       textsProducts[4].innerText = 'Request a quote';
+      textsProducts[5].innerText = 'Name and tals 2';
+      textsProducts[6].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
+      textsProducts[7].innerText = 'Request a quote';
+      textsProducts[8].innerText = 'Name and tals 3';
+      textsProducts[9].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
+      textsProducts[10].innerText = 'Request a quote';
+      textsProducts[11].innerText = 'Name and tals 4';
+      textsProducts[12].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
+      textsProducts[13].innerText = 'Request a quote';
+      textsProducts[14].innerText = 'Name and tals 5';
+      textsProducts[15].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
+      textsProducts[16].innerText = 'Request a quote';
+      textsProducts[17].innerText = 'See All';
+
     };
   };
 
@@ -109,6 +136,18 @@ export const changeTextsHomeBR = () => {
       textsProducts[2].innerText = 'Nombre y tals 1';
       textsProducts[3].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
       textsProducts[4].innerText = 'Solicitar presupuesto';
-
+      textsProducts[5].innerText = 'Nombre y tals 2';
+      textsProducts[6].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+      textsProducts[7].innerText = 'Solicitar presupuesto';
+      textsProducts[8].innerText = 'Nombre y tals 3';
+      textsProducts[9].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+      textsProducts[10].innerText = 'Solicitar presupuesto';
+      textsProducts[11].innerText = 'Nombre y tals 4';
+      textsProducts[12].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+      textsProducts[13].innerText = 'Solicitar presupuesto';
+      textsProducts[14].innerText = 'Nombre y tals 5';
+      textsProducts[15].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+      textsProducts[16].innerText = 'Solicitar presupuesto';
+      textsProducts[17].innerText = 'Vier Tuedos';
     };
   };

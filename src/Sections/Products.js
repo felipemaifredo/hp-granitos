@@ -48,7 +48,7 @@ const Produts = () => {
                 { renderProducts() }
             </div>
             
-                <a href='google.com' rel='nofollow' className='button-style'>Ver Todos</a>
+                <a href='google.com' rel='nofollow' className='button-style text-products'>Ver Todos</a>
            
         </section>
     );
