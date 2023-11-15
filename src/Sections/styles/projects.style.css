@@ -1,0 +1,195 @@
+@import url('../../variables.css');
+
+#projects {
+    height: 800px;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+#projects .title-container {
+    display: grid;
+    place-items: center;
+}
+
+#projects .title-container h2 {
+    color: var(--color-gold);
+    text-transform: uppercase;
+    margin-bottom: -10px;
+}
+
+#projects .title-container h3 {
+    font-size: 4rem;
+    position: relative;
+    padding-bottom: 20px;
+    color: var(--color-blue);
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--color-blue);
+    }
+}
+
+#projects .projects-container {
+    display: flex;
+    gap: 20px;
+}
+
+#projects .projects-container .container-project {
+    height: 250px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+#projects .projects-container .container-project .content-project {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(240, 248, 255, 0.507);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+    
+    position: absolute;
+    right: 100%;
+    opacity: 1;
+    transition: all .5s;
+    pointer-events: none;
+}
+
+#projects .projects-container .container-project:hover .content-project {
+    transition: all .2s;
+    pointer-events: all;
+    opacity: 1;
+    right: 0%;
+}
+
+
+
+#projects .projects-container .container-project .content-project .client-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+#projects .projects-container .container-project .content-project .client-content .img-client {
+    height: 40px;
+    width: 40px;
+}
+
+#projects .projects-container .container-project .content-project .client-content .img-client img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#projects .projects-container .container-project .content-project .client-content .nalo-client {
+}
+
+
+#projects .projects-container .container-project .content-project .client-content .nalo-client .client-name {
+    font-weight: 700;
+    margin-bottom: -2px;
+}
+
+#projects .projects-container .container-project .content-project .client-content .nalo-client .client-location {
+    font-weight: 600;
+    margin-bottom: -2px;
+}
+
+#projects .projects-container .container-project .content-project .client-content .rate-client {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects .projects-container .container-project .content-project .client-content .rate-client svg {
+    color: rgb(255, 217, 0);
+    height: 30px;
+    width: 30px;
+}
+
+#projects .projects-container .container-project .content-project .client-content .rate-client p {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#projects .projects-container .container-project .content-project .project-content {
+}
+
+#projects .projects-container .container-project .content-project .project-content .title-project {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#projects .projects-container .container-project .content-project .project-content .shortdescrip-project {
+    font-weight: 600;
+    font-size: 1rem;
+}
+#projects .projects-container .container-project .content-project .btn-box {
+    display: grid;
+    place-items: center;
+}
+#projects .projects-container .container-project .content-project .btn-box button {
+    border: none;
+    height: 35px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#projects .modal-container {
+    position: absolute;
+    background-color: #2b363fce;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    z-index: -9;
+    pointer-events: none;
+    right: 90%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+#projects .modal-container img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+#projects .modal-container .content-modal {
+    width: 350px;
+}
+
+#projects .modal-container-activate{
+    z-index: 9;
+    right: 0%;
+    pointer-events: all;
+    opacity: 1;
+    transition: all .2s;
+}
+
+#projects .modal-container .close-modal {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+
+#projects .modal-container .content-modal p {
+    color: white;
+    font-weight: 600;
+}

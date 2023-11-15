@@ -46,10 +46,8 @@ const Produts = () => {
             </div>
             <div className='products-container'>
                 { renderProducts() }
-            </div>
-            
-                <a href='google.com' rel='nofollow' className='button-style text-products'>Ver Todos</a>
-           
+            </div>   
+            <a href='google.com' rel='nofollow' className='button-style text-products'>Ver Todos</a>
         </section>
     );
 };
