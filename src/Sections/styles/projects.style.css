@@ -1,10 +1,16 @@
 @import url('../../variables.css');
 
 #projects {
-    height: 800px;
+    height: auto;
+    min-height: 800px;
     width: 100vw;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 50px;
+    position: relative;
 }
 
 #projects .title-container {
@@ -39,6 +45,10 @@
 
 #projects .projects-container {
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
     gap: 20px;
 }
 
@@ -152,7 +162,7 @@
 #projects .modal-container {
     position: absolute;
     background-color: #2b363fce;
-    height: 80%;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -165,6 +175,14 @@
     transition: all .5s;
 }
 
+#projects .modal-container-activate{
+    z-index: 9;
+    right: 0%;
+    pointer-events: all;
+    opacity: 1;
+    transition: all .2s;
+}
+
 #projects .modal-container img {
     width: 400px;
     height: 600px;
@@ -175,21 +193,33 @@
     width: 350px;
 }
 
-#projects .modal-container-activate{
-    z-index: 9;
-    right: 0%;
-    pointer-events: all;
-    opacity: 1;
-    transition: all .2s;
+#projects .modal-container .content-modal .title-modal {
+    font-size: 2.5rem;
 }
 
 #projects .modal-container .close-modal {
     position: absolute;
-    right: 100px;
-    top: 50px;
+    right: 25%;
+    top: 20%;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+
+}
+
+#projects .modal-container .close-modal svg{
+    height: 100%;
+    width: 100%;
+    color: var(--color-white);
+    cursor: pointer;
 }
 
 #projects .modal-container .content-modal p {
     color: white;
     font-weight: 600;
+}
+
+#projects .modal-container .button-style {
+    z-index: 10;
 }

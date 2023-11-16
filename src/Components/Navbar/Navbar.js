@@ -5,13 +5,40 @@ import './navbar.style.css';
 import ChangeIdiom from '../ChangeIdiom/ChangeIdiom';
 
 const Navbar = () => {
+    const handleLinkClick = (e) => {
+        e.preventDefault();
+        let element = e.target.getAttribute('href');
+        let toSection = document.querySelector(element).offsetTop;
+    
+        window.scroll({
+            top: toSection,
+            behavior: "smooth",
+        });
+    };
+
+    const MenusList = [
+        { title: 'Quem Somos', link: '#about' },
+        { title: 'Materiais', link: '#products' },
+        { title: 'Nossos Projetos', link: '#projects' },
+        { title: 'Contato', link: '#contact' },
+    ];
+
+    function createMenuList({title, link, key}) {
+        return(
+            <li key={key} className='navbar-item' > <a className='navbar-link texts-nav' href={link} onClick={handleLinkClick} > {title} </a> </li>
+        );
+    };
+
+    function renderMenuList() {
+        return MenusList.map((menu, index) =>
+        createMenuList({ ...menu, key: index })
+    );
+    }
+    
     return(
         <nav id="navbar">
             <ul className='navbar-container'>
-                <li className='navbar-item' > <a className='navbar-link texts-nav' href='#'> Quem Somos </a> </li>
-                <li className='navbar-item' > <a className='navbar-link texts-nav' href='#'> Materias </a> </li>
-                <li className='navbar-item' > <a className='navbar-link texts-nav' href='#'> Nossos Projetos </a> </li>
-                <li className='navbar-item' > <a className='navbar-link texts-nav' href='#'> Contato </a> </li>
+                { renderMenuList() }
             </ul>
             <ChangeIdiom />
         </nav>
