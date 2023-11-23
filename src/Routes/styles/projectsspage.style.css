@@ -1,0 +1,191 @@
+@import url('../../variables.css');
+
+#ProjectsPage {
+    width: 100vw;
+    padding: 100px 0;
+    display: grid;
+    place-items: center;
+    gap: 25px;
+    position: relative;
+}
+
+#ProjectsPage .projects-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+#ProjectsPage .projects-container .container-project {
+    height: 250px;
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+#ProjectsPage .projects-container .container-project .content-project {
+    height: 100%;
+    width: 100%;
+
+    background-color: rgba(240, 248, 255, 0.507);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 15px;
+    
+    position: absolute;
+    right: 100%;
+    opacity: 1;
+    transition: all .5s;
+    pointer-events: none;
+}
+
+#ProjectsPage .projects-container .container-project:hover .content-project {
+    transition: all .2s;
+    pointer-events: all;
+    opacity: 1;
+    right: 0%;
+}
+
+
+
+#ProjectsPage .projects-container .container-project .content-project .client-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .client-content .img-client {
+    height: 40px;
+    width: 40px;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .client-content .img-client img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .client-content .nalo-client {
+}
+
+
+#ProjectsPage .projects-container .container-project .content-project .client-content .nalo-client .client-name {
+    font-weight: 700;
+    margin-bottom: -2px;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .client-content .nalo-client .client-location {
+    font-weight: 600;
+    margin-bottom: -2px;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .client-content .rate-client {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .client-content .rate-client svg {
+    color: rgb(255, 217, 0);
+    height: 30px;
+    width: 30px;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .client-content .rate-client p {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .project-content {
+}
+
+#ProjectsPage .projects-container .container-project .content-project .project-content .title-project {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#ProjectsPage .projects-container .container-project .content-project .project-content .shortdescrip-project {
+    font-weight: 600;
+    font-size: 1rem;
+}
+#ProjectsPage .projects-container .container-project .content-project .btn-box {
+    display: grid;
+    place-items: center;
+}
+#ProjectsPage .projects-container .container-project .content-project .btn-box button {
+    border: none;
+    height: 35px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#ProjectsPage .modal-container {
+    position: absolute;
+    background-color: #2b363fce;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    z-index: -9;
+    pointer-events: none;
+    right: 90%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+#ProjectsPage .modal-container-activate{
+    z-index: 9;
+    right: 0%;
+    pointer-events: all;
+    opacity: 1;
+    transition: all .2s;
+}
+
+#ProjectsPage .modal-container img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+#ProjectsPage .modal-container .content-modal {
+    width: 350px;
+}
+
+#ProjectsPage .modal-container .content-modal .title-modal {
+    font-size: 2.5rem;
+}
+
+#ProjectsPage .modal-container .close-modal {
+    position: absolute;
+    right: 25%;
+    top: 20%;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+
+}
+
+#ProjectsPage .modal-container .close-modal svg{
+    height: 100%;
+    width: 100%;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+#ProjectsPage .modal-container .content-modal p {
+    color: white;
+    font-weight: 600;
+}
+
+#ProjectsPage .modal-container .button-style {
+    z-index: 10;
+}

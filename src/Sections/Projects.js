@@ -10,7 +10,6 @@ import { IoIosStar } from "react-icons/io";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
 const Projects = () => {
-    
     const [modalActive, setModalActive] = useState(false);
     const [modalData, setModalData] = useState({
         name: '',

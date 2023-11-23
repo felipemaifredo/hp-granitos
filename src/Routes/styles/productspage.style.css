@@ -1,0 +1,73 @@
+@import url('../../variables.css');
+
+#ProductsPage {
+    width: 100vw;
+    padding-top: 100px;
+    display: grid;
+    place-items: center;
+    gap: 25px;
+}
+
+#ProductsPage .products-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+#ProductsPage .item-container {
+    height: 450px;
+    width: 200px;
+    background-size: cover;
+    transition: all .5s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    overflow: hidden;
+
+    &:hover {
+        transition: all .2s;
+        width: 450px;
+    }
+
+    &:hover .content-container {
+        opacity: 1;
+        transition: all .2s;
+    }
+}
+
+#ProductsPage .item-container .content-container {
+    opacity: 0;
+    transition: all .5s;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+#ProductsPage .item-container .content-container h4 {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: var(--color-blue);
+}
+
+#ProductsPage .item-container .content-container p {
+    font-size: 1.01rem;
+    font-weight: 600;
+    color: var(--color-blue);
+}
+
+#ProductsPage .item-container .content-container .btn-container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+#ProductsPage .item-container .content-container .button-style {
+    height: 40px;
+}
