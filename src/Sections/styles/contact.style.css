@@ -1,0 +1,8 @@
+@import url('../../variables.css');
+
+#contact {
+    height: 800px;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}

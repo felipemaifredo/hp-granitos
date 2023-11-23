@@ -3,6 +3,7 @@ import './styles/projects.style.css';
 import { useState } from 'react';
 import { projectsData } from '../Data/ProjectsData';
 import { Link } from 'react-router-dom';
+import TitleContainer from '../Components/titleContainer/titleContainer';
 
 //Assets
 import { IoIosStar } from "react-icons/io";
@@ -74,10 +75,7 @@ const Projects = () => {
 
     return (
         <section id="projects">
-             <div className='title-container'>
-                <h2 className='text-products'> Nossos Projetos</h2>
-                <h3 className='text-products'> em Granito </h3>
-            </div>
+            <TitleContainer section="projects" title="em Granito" subtitle="Nossos Projetos" />
             <div className='projects-container'>
                 { renderProjects() }
             </div>  
@@ -89,7 +87,7 @@ const Projects = () => {
                     <p className='text-modal'> {modalData.longDescrip} </p>
                 </div>
             </div>
-            <Link to={'/projetos'} className='button-style text-products'> Ver Todos </Link>
+            <Link to={'/projetos'} className='button-style text-projects'> Ver Todos </Link>
         </section>
     );
 };

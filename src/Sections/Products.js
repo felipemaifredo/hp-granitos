@@ -2,6 +2,7 @@
 import './styles/products.style.css';
 import { produtsData } from '../Data/ProductsData';
 import { Link } from 'react-router-dom';
+import TitleContainer from '../Components/titleContainer/titleContainer';
 
 const Produts = () => {
 
@@ -29,10 +30,7 @@ const Produts = () => {
 
     return (
         <section id="products">
-            <div className='title-container'>
-                <h2 className='text-products'>Nossos Produtos</h2>
-                <h3 className='text-products'>Granitos</h3>
-            </div>
+            <TitleContainer section="products" title="Granitos" subtitle="Nossos Produtos" />
             <div className='products-container'>
                 { renderProducts() }
             </div>   
