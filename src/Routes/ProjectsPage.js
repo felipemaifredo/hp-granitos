@@ -1,7 +1,7 @@
 //Imports
 import './styles/projectsspage.style.css';
 import TitleContainer from '../Components/titleContainer/titleContainer';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { projectsData } from '../Data/ProjectsData';
 
 //Assets
@@ -14,7 +14,16 @@ const ProjectsPage = () => {
         name: '',
         img2: '',
         longDescrip: '',
-      });
+    });
+
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({
+            top: 0,
+          });
+        };
+        scrollToTop();
+    });
 
     function createCardProject({img1, img2, name, clientName, clientImg, location, rate, shortDescrip, longDescrip, key}) {
         return (

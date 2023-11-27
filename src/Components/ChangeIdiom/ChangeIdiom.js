@@ -8,7 +8,7 @@ import SPIcon from '../../Assets/Icons/spa-icon.png';
 
 //Funcs Idioms
 import { changeTextsHomeBR, changeTextsHomeUS, changeTextsHomeSP } from './TextsPages/TextsHome';
-
+import { changeTextsProductsBR, changeTextsProductsEN, changeTextsProductsSP } from './TextsPages/TextsProducts';
 function ChangeIdiom() {
   const location = useLocation().pathname;
   const [isIdiom, setisIdiom] = useState( localStorage.getItem('isIdiom') || 'isBr' );
@@ -67,6 +67,9 @@ function ChangeIdiom() {
       case '/':
           changeTextsHomeBR();
         break;
+      case '/produtos':
+          changeTextsProductsBR();
+        break;
     
       default:
         break;
@@ -78,7 +81,9 @@ function ChangeIdiom() {
       case '/':
           changeTextsHomeUS();
         break;
-    
+      case '/produtos':
+          changeTextsProductsEN();
+        break;
       default:
         break;
     };
@@ -89,7 +94,9 @@ function ChangeIdiom() {
       case '/':
           changeTextsHomeSP();
         break;
-    
+      case '/produtos':
+          changeTextsProductsSP();
+        break;
       default:
         break;
     };

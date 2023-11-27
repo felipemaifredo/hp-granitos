@@ -2,8 +2,18 @@
 import './styles/productspage.style.css';
 import TitleContainer from '../Components/titleContainer/titleContainer';
 import { produtsData } from '../Data/ProductsData';
+import { useEffect } from 'react';
 
 const ProductsPage = () => {
+
+    useEffect(() => {
+        const scrollToTop = () => {
+          window.scrollTo({
+            top: 0,
+          });
+        };
+        scrollToTop();
+    });
     
     const createCardProduct = ({img, name, text, index}) => {
         return(
