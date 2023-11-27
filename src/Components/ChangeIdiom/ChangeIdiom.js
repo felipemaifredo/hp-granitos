@@ -1,6 +1,8 @@
+//Imports
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './changeidiom.style.css';
+
 //Assets
 import BRIcon from '../../Assets/Icons/bra-icon.png';
 import USIcon from '../../Assets/Icons/eua-icon.png';
@@ -9,6 +11,7 @@ import SPIcon from '../../Assets/Icons/spa-icon.png';
 //Funcs Idioms
 import { changeTextsHomeBR, changeTextsHomeUS, changeTextsHomeSP } from './TextsPages/TextsHome';
 import { changeTextsProductsBR, changeTextsProductsEN, changeTextsProductsSP } from './TextsPages/TextsProducts';
+
 function ChangeIdiom() {
   const location = useLocation().pathname;
   const [isIdiom, setisIdiom] = useState( localStorage.getItem('isIdiom') || 'isBr' );

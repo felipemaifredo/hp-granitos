@@ -1,3 +1,12 @@
+const SOrc = 'Solicitar Orçamento';
+const VTod = 'Ver Todos';
+
+const RQuo = 'Resquest a Quote';
+const SAll = 'See All';
+
+const SPre = 'Solicitar presupuesto';
+const VTue = 'Vier Tuedos';
+
 export const changeTextsHomeBR = () => {
     document.title = 'HP Stone | Granitos Export';
     document.documentElement.lang = 'pt-br';
@@ -30,26 +39,43 @@ export const changeTextsHomeBR = () => {
     if (textsProducts) {
       textsProducts[0].innerText = 'Nossos Produtos';
       textsProducts[1].innerText = 'Granitos';
+
       textsProducts[2].innerText = 'Nome e tals 1';
       textsProducts[3].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[4].innerText = 'Solicitar Orçamento';
+      textsProducts[4].innerText = SOrc;
+
       textsProducts[5].innerText = 'Nome e tals 2';
       textsProducts[6].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[7].innerText = 'Solicitar Orçamento';
+      textsProducts[7].innerText = SOrc;
+
       textsProducts[8].innerText = 'Nome e tals 3';
       textsProducts[9].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[10].innerText = 'Solicitar Orçamento';
+      textsProducts[10].innerText = SOrc;
+
       textsProducts[11].innerText = 'Nome e tals 4';
       textsProducts[12].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[13].innerText = 'Solicitar Orçamento';
+      textsProducts[13].innerText = SOrc;
+
       textsProducts[14].innerText = 'Nome e tals 5';
       textsProducts[15].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[17].innerText = 'Ver Todos';
 
+      textsProducts[17].innerText = VTod;
     };
-  };
+
+    let textsProjects = document.querySelectorAll('.text-projects');
+    if (textsProjects) {
+      textsProjects[0].innerText = 'Nossos Projetos';
+      textsProjects[1].innerText = 'Em Granito';
+    };
+
+    let textsContact = document.querySelectorAll('.text-contacts');
+    if (textsProjects) {
+      textsContact[0].innerText = 'Fale Conosco';
+      textsContact[1].innerText = 'Contato';
+    };
+};
   
-  export const changeTextsHomeUS = () => {
+export const changeTextsHomeUS = () => {
     document.title = 'HP Stone | Export Granites';
     document.documentElement.lang = 'en';
 
@@ -81,27 +107,44 @@ export const changeTextsHomeBR = () => {
     if (textsProducts) {
       textsProducts[0].innerText = 'Our Products';
       textsProducts[1].innerText = 'Granites';
+
       textsProducts[2].innerText = 'Name and tals 1';
       textsProducts[3].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
-      textsProducts[4].innerText = 'Request a quote';
+      textsProducts[4].innerText = RQuo;
+
       textsProducts[5].innerText = 'Name and tals 2';
       textsProducts[6].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
-      textsProducts[7].innerText = 'Request a quote';
+      textsProducts[7].innerText = RQuo;
+
       textsProducts[8].innerText = 'Name and tals 3';
       textsProducts[9].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
-      textsProducts[10].innerText = 'Request a quote';
+      textsProducts[10].innerText = RQuo;
+
       textsProducts[11].innerText = 'Name and tals 4';
       textsProducts[12].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
-      textsProducts[13].innerText = 'Request a quote';
+      textsProducts[13].innerText = RQuo;
+
       textsProducts[14].innerText = 'Name and tals 5';
       textsProducts[15].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text texto';
-      textsProducts[16].innerText = 'Request a quote';
-      textsProducts[17].innerText = 'See All';
+      textsProducts[16].innerText = RQuo;
 
+      textsProducts[17].innerText = SAll;
     };
-  };
 
-  export const changeTextsHomeSP = () => {
+    let textsProjects = document.querySelectorAll('.text-projects');
+    if (textsProjects) {
+      textsProjects[0].innerText = 'Our Projects';
+      textsProjects[1].innerText = 'In Granite';
+    };
+
+    let textsContact = document.querySelectorAll('.text-contacts');
+    if (textsProjects) {
+      textsContact[0].innerText = 'Get in Touch';
+      textsContact[1].innerText = 'Contact';
+    };
+};
+
+export const changeTextsHomeSP = () => {
     document.title = 'HP Stone | Granitos de Exportación';
     document.documentElement.lang = 'es';
 
@@ -133,21 +176,39 @@ export const changeTextsHomeBR = () => {
     if (textsProducts) {
       textsProducts[0].innerText = 'Nuestros productos';
       textsProducts[1].innerText = 'Granitos';
+
       textsProducts[2].innerText = 'Nombre y tals 1';
       textsProducts[3].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[4].innerText = 'Solicitar presupuesto';
+      textsProducts[4].innerText = SPre;
+
       textsProducts[5].innerText = 'Nombre y tals 2';
       textsProducts[6].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[7].innerText = 'Solicitar presupuesto';
+      textsProducts[7].innerText = SPre;
+
       textsProducts[8].innerText = 'Nombre y tals 3';
       textsProducts[9].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[10].innerText = 'Solicitar presupuesto';
+      textsProducts[10].innerText = SPre;
+
       textsProducts[11].innerText = 'Nombre y tals 4';
       textsProducts[12].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[13].innerText = 'Solicitar presupuesto';
+      textsProducts[13].innerText = SPre;
+
       textsProducts[14].innerText = 'Nombre y tals 5';
       textsProducts[15].innerText = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
-      textsProducts[16].innerText = 'Solicitar presupuesto';
-      textsProducts[17].innerText = 'Vier Tuedos';
+      textsProducts[16].innerText = SPre;
+
+      textsProducts[17].innerText = VTue;
     };
-  };
+
+    let textsProjects = document.querySelectorAll('.text-projects');
+    if (textsProjects) {
+      textsProjects[0].innerText = 'Nuestros Proyectos';
+      textsProjects[1].innerText = 'En granito';
+    };
+
+    let textsContact = document.querySelectorAll('.text-contacts');
+    if (textsProjects) {
+      textsContact[0].innerText = 'Ponerse en contacto';
+      textsContact[1].innerText = 'Contacto';
+    };
+};

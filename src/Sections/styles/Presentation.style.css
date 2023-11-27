@@ -1,6 +1,5 @@
 @import url('../../variables.css');
 
-
 #Presentation {
     height: 100vh;
     width: 100vw;
@@ -10,6 +9,7 @@
     align-items: center;
     justify-content: center;
     gap: 200px;
+    overflow-y: hidden;
 }
 
 #Presentation .info-container {
@@ -97,5 +97,3 @@
     -webkit-box-shadow: -8px 15px 34px 1px rgba(19, 32, 42, 1);
     -moz-box-shadow: -8px 15px 34px 1px rgba(19, 32, 42, 1);
 }
-
-

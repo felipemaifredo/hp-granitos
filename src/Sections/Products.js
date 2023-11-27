@@ -6,6 +6,17 @@ import TitleContainer from '../Components/titleContainer/titleContainer';
 
 const Produts = () => {
 
+    const handleLinkClick = (e) => {
+        e.preventDefault();
+        let element = e.target.getAttribute('href');
+        let toSection = document.querySelector(element).offsetTop;
+    
+        window.scroll({
+            top: toSection,
+            behavior: "smooth",
+        });
+    };
+
     const createCardProduct = ({img, name, text, index, destaque}) => {
         if (destaque) {
             return (
@@ -14,7 +25,7 @@ const Produts = () => {
                         <h4 className='text-products'>{name}</h4>
                         <p className='text-products'>{text}</p>
                         <div className='btn-container'>
-                            <a href='google.com' rel='nofollow' className='button-style text-products'>Solicitar Orçamento</a>
+                            <a href='#contact' rel='nofollow' className='button-style text-products' onClick={handleLinkClick} >Solicitar Orçamento</a>
                         </div>
                     </div>
                 </div>
