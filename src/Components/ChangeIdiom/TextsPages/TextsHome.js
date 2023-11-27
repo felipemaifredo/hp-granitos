@@ -1,11 +1,15 @@
+import { projectsData } from "../../../Data/ProjectsData";
+
 const SOrc = 'Solicitar Orçamento';
 const VTod = 'Ver Todos';
 
 const RQuo = 'Resquest a Quote';
 const SAll = 'See All';
+const SMore = 'See More';
 
 const SPre = 'Solicitar presupuesto';
 const VTue = 'Vier Tuedos';
+const LMas = 'Leer Más';
 
 export const changeTextsHomeBR = () => {
     document.title = 'HP Stone | Granitos Export';
@@ -66,12 +70,63 @@ export const changeTextsHomeBR = () => {
     if (textsProjects) {
       textsProjects[0].innerText = 'Nossos Projetos';
       textsProjects[1].innerText = 'Em Granito';
+      textsProjects[2].innerText = VTod;
     };
 
     let textsContact = document.querySelectorAll('.text-contacts');
     if (textsProjects) {
       textsContact[0].innerText = 'Fale Conosco';
       textsContact[1].innerText = 'Contato';
+
+      //textsProjects[2].innerText = '';
+      //textsProjects[3].innerText = '';
+      textsProjects[4].innerText = 'Nome e Tals';
+      textsProjects[5].innerText = 'texto texto texto texto text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[6].innerText = VTod;
+      projectsData[0].name = 'Nome e Tals';
+      projectsData[0].longDescrip = 'texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto';
+
+      //textsProjects[7].innerText = '';
+      //textsProjects[8].innerText = '';
+      textsProjects[9].innerText = 'Nome e Tals';
+      textsProjects[10].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[11].innerText = VTod;
+      projectsData[1].name = 'Nome e Tals';
+      projectsData[1].longDescrip = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text';
+
+      //textsProjects[12].innerText = '';
+      //textsProjects[13].innerText = '';
+      textsProjects[14].innerText = 'Nome e Tals';
+      textsProjects[15].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[16].innerText = VTod;
+      projectsData[2].name = 'Nome e Tals';
+      projectsData[2].longDescrip = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text';
+
+      //textsProjects[17].innerText = '';
+      //textsProjects[18].innerText = '';
+      textsProjects[19].innerText = 'Nome e Tals';
+      textsProjects[20].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[21].innerText = VTod;
+      projectsData[3].name = 'Nome e Tals';
+      projectsData[3].longDescrip = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text';
+
+      //textsProjects[22].innerText = '';
+      //textsProjects[23].innerText = '';
+      textsProjects[24].innerText = 'Nome e Tals';
+      textsProjects[25].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[26].innerText = VTod;
+      projectsData[4].name = 'Nome e Tals';
+      projectsData[4].longDescrip = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text';
+
+      //textsProjects[27].innerText = '';
+      //textsProjects[28].innerText = '';
+      textsProjects[29].innerText = 'Nome e Tals';
+      textsProjects[30].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[31].innerText = VTod; 
+      projectsData[5].name = 'Nome e Tals';
+      projectsData[5].longDescrip = 'text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text';
+
+      textsProjects[34].innerText = VTod; 
     };
 };
   
@@ -135,6 +190,44 @@ export const changeTextsHomeUS = () => {
     if (textsProjects) {
       textsProjects[0].innerText = 'Our Projects';
       textsProjects[1].innerText = 'In Granite';
+      
+      //textsProjects[2].innerText = '';
+      //textsProjects[3].innerText = '';
+      textsProjects[4].innerText = 'Name and Tals';
+      textsProjects[5].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[6].innerText = SMore;
+
+      //textsProjects[7].innerText = '';
+      //textsProjects[8].innerText = '';
+      textsProjects[9].innerText = 'Name and Tals';
+      textsProjects[10].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[11].innerText = SMore;
+
+      //textsProjects[12].innerText = '';
+      //textsProjects[13].innerText = '';
+      textsProjects[14].innerText = 'Name and Tals';
+      textsProjects[15].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[16].innerText = SMore;
+
+      //textsProjects[17].innerText = '';
+      //textsProjects[18].innerText = '';
+      textsProjects[19].innerText = 'Name and Tals';
+      textsProjects[20].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[21].innerText = SMore;
+     
+      //textsProjects[22].innerText = '';
+      //textsProjects[23].innerText = '';
+      textsProjects[24].innerText = 'Name and Tals';
+      textsProjects[25].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[26].innerText = SMore;
+
+      //textsProjects[27].innerText = '';
+      //textsProjects[28].innerText = '';
+      textsProjects[29].innerText = 'Name and Tals';
+      textsProjects[30].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[31].innerText = SMore; 
+    
+      textsProjects[34].innerText = SAll; 
     };
 
     let textsContact = document.querySelectorAll('.text-contacts');
@@ -204,6 +297,44 @@ export const changeTextsHomeSP = () => {
     if (textsProjects) {
       textsProjects[0].innerText = 'Nuestros Proyectos';
       textsProjects[1].innerText = 'En granito';
+  
+      //textsProjects[2].innerText = '';
+      //textsProjects[3].innerText = '';
+      textsProjects[4].innerText = 'Nombre y Tals';
+      textsProjects[5].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[6].innerText = LMas;
+        
+      //textsProjects[7].innerText = '';
+      //textsProjects[8].innerText = '';
+      textsProjects[9].innerText = 'Nombre y Tals';
+      textsProjects[10].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[11].innerText = LMas;
+       
+      //textsProjects[12].innerText = '';
+      //textsProjects[13].innerText = '';
+      textsProjects[14].innerText = 'Nombre y Tals';
+      textsProjects[15].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[16].innerText = LMas;
+       
+      //textsProjects[17].innerText = '';
+      //textsProjects[18].innerText = '';
+      textsProjects[19].innerText = 'Nombre y Tals';
+      textsProjects[20].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[21].innerText = LMas;
+        
+      //textsProjects[22].innerText = '';
+      //textsProjects[23].innerText = '';
+      textsProjects[24].innerText = 'Nombre y Tals';
+      textsProjects[25].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[26].innerText = LMas;
+      
+      //textsProjects[27].innerText = '';
+      //textsProjects[28].innerText = '';
+      textsProjects[29].innerText = 'Nombre y Tals';
+      textsProjects[30].innerText = 'text text text text text text text text text text text text text text text text text text text text text text text text text text';
+      textsProjects[31].innerText = LMas; 
+           
+      textsProjects[34].innerText = VTue; 
     };
 
     let textsContact = document.querySelectorAll('.text-contacts');

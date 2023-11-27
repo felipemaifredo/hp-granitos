@@ -38,6 +38,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding-left: 15px;
+    padding-right: 5px;
     
     position: absolute;
     right: 100%;

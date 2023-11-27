@@ -27,8 +27,8 @@ const Projects = () => {
                                 <img src={clientImg} alt='Imagem de cliente' />
                             </div>
                             <div className='nalo-client'>
-                                <p className='client-name'>{clientName}</p>
-                                <p className='client-location'>{location}</p>
+                                <p className='client-name text-projects'>{clientName}</p>
+                                <p className='client-location text-projects'>{location}</p>
                             </div>
                             <div className='rate-client'>
                                 <IoIosStar /> 
@@ -36,11 +36,11 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className='project-content'>
-                            <p className='title-project'>{name}</p>
-                            <p className='shortdescrip-project'>{shortDescrip}</p>
+                            <p className='title-project text-projects'>{name}</p>
+                            <p className='shortdescrip-project text-projects'>{shortDescrip}</p>
                         </div>
                         <div className='btn-box'>
-                            <button className='button-style' onClick={() => renderModal({img2, name, longDescrip})}> Ler Mais </button>
+                            <button className='button-style text-projects' onClick={() => renderModal({img2, name, longDescrip})}> Ler Mais </button>
                         </div>
                     </div>
                 </div>
@@ -82,8 +82,8 @@ const Projects = () => {
                 <button className='close-modal' onClick={() => closeModal()}> <IoCloseCircleOutline /> </button>
                 <img src={modalData.img2} alt='Imagem de alguma coisa'/>
                 <div className='content-modal'>
-                    <p className='title-modal'> {modalData.name} </p>
-                    <p className='text-modal'> {modalData.longDescrip} </p>
+                    <p className='title-modal text-projects'> {modalData.name} </p>
+                    <p className='text-modal text-projects'> {modalData.longDescrip} </p>
                 </div>
             </div>
             <Link to={'/projetos'} className='button-style text-projects'> Ver Todos </Link>

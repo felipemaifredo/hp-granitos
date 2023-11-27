@@ -22,7 +22,7 @@ const ProductsPage = () => {
                     <h4 className='text-products text-products'>{name}</h4>
                     <p className='text-products text-products'>{text}</p>
                     <div className='btn-container'>
-                        <a href='google.com' rel='nofollow' className='button-style text-products'>Solicitar Orçamento</a>
+                        <a href='#contact' rel='nofollow' className='button-style text-products'>Solicitar Orçamento</a>
                     </div>
                 </div>
             </div>
