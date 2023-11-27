@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hp-granitos/static/css/main.8b311097.css",
-    "main.js": "/hp-granitos/static/js/main.99b28050.js",
+    "main.css": "/hp-granitos/static/css/main.c5799a8c.css",
+    "main.js": "/hp-granitos/static/js/main.dd146176.js",
     "static/js/787.b6c74976.chunk.js": "/hp-granitos/static/js/787.b6c74976.chunk.js",
     "static/media/video1.gif": "/hp-granitos/static/media/video1.3b41bdea03fb918d7cd2.gif",
     "static/media/imgAbout.png": "/hp-granitos/static/media/imgAbout.43d9394cb558fa78f14f.png",
@@ -19,12 +19,12 @@
     "static/media/2.png": "/hp-granitos/static/media/2.123271813354eea660e6.png",
     "static/media/1.png": "/hp-granitos/static/media/1.9912e92d25d6f439e290.png",
     "index.html": "/hp-granitos/index.html",
-    "main.8b311097.css.map": "/hp-granitos/static/css/main.8b311097.css.map",
-    "main.99b28050.js.map": "/hp-granitos/static/js/main.99b28050.js.map",
+    "main.c5799a8c.css.map": "/hp-granitos/static/css/main.c5799a8c.css.map",
+    "main.dd146176.js.map": "/hp-granitos/static/js/main.dd146176.js.map",
     "787.b6c74976.chunk.js.map": "/hp-granitos/static/js/787.b6c74976.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b311097.css",
-    "static/js/main.99b28050.js"
+    "static/css/main.c5799a8c.css",
+    "static/js/main.dd146176.js"
   ]
 }
