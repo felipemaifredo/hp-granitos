@@ -24,6 +24,29 @@ const Contact = () => {
         { name: 'subject', placeholder: 'Assunto' },
     ];
 
+    const adreesData = [
+        { img: <FaWhatsapp />, name: 'Whatsapp', text: '(28) 99951-9306' },
+        { img: <AiOutlineMail />, name: 'Email', text: 'Contato@hpgranitos.com.br' },
+        { img: <RiMapPinFill />, name: 'Endereço', text: 'Rua rua rua rua rua rua, 01 - Bairro Bairro - Cidade Cidade / ES' },
+
+    ];
+
+    const createAdress = ({img, name, text, key}) => {
+        return (
+            <div className='adress-box' key={key}>
+                <span> {img} </span>
+                <div className='data-adress'>
+                    <p className='title-adress'> {name} </p>
+                    <p className='adress'> {text} </p>
+                </div>
+            </div>
+        )
+    }
+
+    const renderAdress = () => {
+        return adreesData.map((adress, index) => createAdress({ ...adress, key: index }));
+    };
+
     const createInputs = ({name, placeholder, key}) => {
         return(
             <input className='input-contact' key={key} name={name} placeholder={placeholder} value={formData[name]} onChange={(e) => setFormData({ ...formData, [name]: e.target.value })} />
@@ -78,7 +101,7 @@ const Contact = () => {
             <TitleContainer section="contacts" title="Contato" subtitle="Fale Conosco" />
             <div className='contact-container'>
                 <div className='adrees-container'>
-
+                    { renderAdress() }
                 </div>
                 <form id='form-contact' onSubmit={ sendEmail } >
                     { renderInputs() }

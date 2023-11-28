@@ -1,10 +1,73 @@
 @import url('../../variables.css');
 
 #contact {
-    height: 800px;
+    height: 600px;
     width: 100vw;
     display: grid;
     place-items: center;
+}
+
+#contact .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+#contact .adrees-container {
+    width: 400px;
+    height: 400px;
+    background-color: var(--color-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    gap: 20px;
+}
+
+#contact .contact-container .adrees-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+#contact .contact-container .adrees-container .adress-box {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+#contact .contact-container .adrees-container .adress-box span {
+    width: 45px;
+    height: 45px;
+}
+
+#contact .contact-container .adrees-container .adress-box span svg {
+    width: 100%;
+    height: 100%;
+    color: var(--color-white);
+}
+
+#contact .contact-container .adrees-container .adress-box .data-adress {
+    
+}
+
+#contact .contact-container .adrees-container .adress-box .data-adress .title-adress {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-white);
+
+}
+
+#contact .contact-container .adrees-container .adress-box .data-adress .adress {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 #contact #form-contact {
@@ -13,11 +76,13 @@
    align-items: center;
    justify-content: center;
    gap: 20px;
+
+   height: 400px;
 }
 
 #contact #form-contact .input-contact {
-    width: 250px;
-    height: 40px;
+    width: 300px;
+    height: 50px;
     padding-left: 20px;
     border-radius: 20px;
     border: 2px solid var(--color-blue);
@@ -27,8 +92,4 @@
     &::placeholder {
         color: var(--color-blue);
     }
-}
-
-#contact #form-contact button {
-
 }
