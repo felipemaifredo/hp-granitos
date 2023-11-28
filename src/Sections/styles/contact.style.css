@@ -6,3 +6,29 @@
     display: grid;
     place-items: center;
 }
+
+#contact #form-contact {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+#contact #form-contact .input-contact {
+    width: 250px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--color-blue);
+    color: var(--color-blue);
+    font-weight: 600;
+
+    &::placeholder {
+        color: var(--color-blue);
+    }
+}
+
+#contact #form-contact button {
+
+}

@@ -7,6 +7,18 @@
 import video from '../Assets/video1.gif';
 
 const Presentation = () => {
+
+    const handleLinkClick = (e) => {
+        e.preventDefault();
+        let element = e.target.getAttribute('href');
+        let toSection = document.querySelector(element).offsetTop;
+    
+        window.scroll({
+            top: toSection,
+            behavior: "smooth",
+        });
+    };
+
     return (
         <section id="Presentation">
             <div className='info-container'>
@@ -24,7 +36,7 @@ const Presentation = () => {
                     </h1>
                 </div>
                 <div className='btn-box'>
-                    <a href='google.com' className='texts-presentation' rel='nofollow'>Quero Meu projeto em Granito</a>
+                    <a href='#contact' onClick={handleLinkClick} className='texts-presentation' rel='nofollow'>Quero Meu projeto em Granito</a>
                 </div>
             </div>
             <div className='video-container'>

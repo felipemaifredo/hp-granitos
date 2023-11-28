@@ -26,7 +26,7 @@ const Contact = () => {
 
     const createInputs = ({name, placeholder, key}) => {
         return(
-            <input key={key} name={name} placeholder={placeholder} value={formData[name]} onChange={(e) => setFormData({ ...formData, [name]: e.target.value })} />
+            <input className='input-contact' key={key} name={name} placeholder={placeholder} value={formData[name]} onChange={(e) => setFormData({ ...formData, [name]: e.target.value })} />
         )
     };
 
@@ -82,7 +82,7 @@ const Contact = () => {
                 </div>
                 <form id='form-contact' onSubmit={ sendEmail } >
                     { renderInputs() }
-                    <button type="submit"> {textBTN} </button>
+                    <button type="submit" className='button-style'> {textBTN} </button>
                 </form>
             </div>
         </section>
